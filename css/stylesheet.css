@@ -1,0 +1,3459 @@
+/* import font google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: "Louis Vuitton Web","Helvetica Neue","Helvetica",Arial,sans-serif;
+    background: whitesmoke;
+    font-family: "Poppins";
+}
+
+/*  */
+.nav{
+    background: white;
+    padding: 20px 50px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top > div:not(.search){
+    padding-bottom: 15px;
+}
+
+.search input{
+    width: 200px;
+    height: 20px;
+}
+
+.nav-account i{
+    margin-left: 5px;
+}
+
+.personal{
+    border-bottom: 3px solid;
+}
+
+.index-personal:hover, .detail-personal:hover{
+    border-bottom: 3px solid;
+}
+
+.deals:hover, .wireless:hover, .internet:hover, .tv:hover, .prepaid:hover, .business:hover, .nav-heart:hover, .nav-cart:hover, .nav-support:hover, .nav-account:hover{
+    border-bottom: 3px solid;
+}
+
+
+.bot{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.bot1 span:hover{
+    border-bottom: 3px solid;
+}
+
+/*  */
+
+.sort{
+    padding: 20px 10px 0 0;
+    text-align: end;
+}
+
+/* catelogies */
+.catelogies{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 100px;
+}
+
+.product{
+    margin: 20px auto;
+    width: 350px;
+    height: 400px;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    color: black;
+    position: relative;
+    text-align: left;
+    transition: box-shadow 0.5s;
+}
+
+.product:hover{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.pro-heart{
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.pro-img{
+    width: 90%;
+    transition: 0.5s;
+}
+
+.pro-img img{
+    width: 31%;
+    height: 58%;
+    object-fit: cover; /* nó sẽ giúp cho ảnh dù to cũng sẽ thu về ở chất lượng cao */
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    display: block;
+}
+
+.pro-right{
+    padding: 0 5px;
+}
+
+.pro-rate{
+    position: absolute;
+    top: 44px;
+    right: 65px;
+    font-size: 10px;
+}
+
+.pro-name{
+    color: #75E6DA;
+    position: absolute;
+    top: 60px;
+    font-size: 21px;
+    font-weight: bold;
+    padding-left: 171px;
+    text-align: left;
+}
+
+.pro-price{
+    font-weight: lighter;
+    font-size: 16px;
+    position: absolute;
+    top: 147px;
+    right: 123px;
+    display:inline-block;
+}
+
+.pro-info p{
+    padding: 178px 0 0 173px;
+    font-size: 11px;
+}
+
+.pro-action{
+    padding: 20px 40px;
+    font-size: 15px;
+}
+
+.pro-action input{
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin-right: 5px;
+    box-shadow: 1px;
+}
+
+.connect{
+    margin: 0 100px;
+}
+
+.cn-header{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.connect-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+
+.connect-list h6{
+    font-size: 17px;
+}
+
+.connect-list p{
+    font-size: 13px;
+}
+
+.cn-ac{
+    margin-top: 10px;
+}
+
+.cn-ac i{
+    margin-left: 5px;
+}
+
+.cn-ac:hover{
+    color: blue;
+}   
+
+.cn-img{
+    overflow: hidden;
+}
+
+.cn-img img:hover{
+    transform: scale(1.2);
+}
+
+.footer{
+    margin: 140px 100px;
+}
+
+.ft-top{
+    height: 40px;
+    border-bottom: 1px solid;
+}
+
+.ft-mid{
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
+.ft-mid a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.ft-mid-right i{
+    font-size: 30px;
+}
+
+.ft-mid-left, .ft-mid-mid{
+    border-right: 1px solid;
+}
+
+.ft-mid-left > div, .ft-mid-mid > div, .ft-mid-right > div{
+    margin: 20px 30px 0 20px;
+}
+
+
+.ft-mid-left a:hover, .ft-mid-mid a:hover, .ft-mid-right a:hover{
+    border-bottom: 1px solid;
+}
+
+.ft-bot :not(:last-child){
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-bot span:hover{
+   border-bottom: 1px solid;
+}
+
+.ft-bot div{
+    /* margin: 20px; */
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.ft-bot a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* details */
+.main{
+    background: white;
+    margin: 50px;
+}
+
+.info{
+    position: flex;
+    justify-content: space-between;
+}
+
+.info-img{
+    margin: 80px 94px 70px 169px;
+}
+
+.info-img img{
+    position: absolute;
+    left: 233px;
+    top: 260px;
+}
+
+.info-c{
+    position: relative;
+}
+
+.info-heart, .info-maximize{
+    position: absolute;
+    top: 20px;
+    left: 125px;
+    font-size: 25px;
+}
+
+.info-maximize{
+    left: 535px;
+}
+
+.info-rate{
+    position: absolute;
+    right: 550px;
+    top: 220px;
+    font-size: 25px;
+}
+
+.info-name{
+    position: absolute;
+    right: 428px;
+    top: 270px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.info-price{
+    position: absolute;
+    right: 185px;
+    top: 222px;
+}
+
+.info-price p:first-child{
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.info-p{
+    padding: 104px 207px 0 623px;
+}
+
+.info-more{
+    padding: 25px 240px 0 623px;
+}
+
+.info-color{
+    margin: 40px 0 36px 624px;
+    padding-left: 40px;
+    width: 500px;
+    height: 150px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.info-co-top{
+    position: relative;
+}
+
+.info-color .edit a{
+    position: absolute;
+    right: 40px;
+    top: 26px;
+    font-weight: unset;
+    text-decoration: none;
+}
+
+.info-color .edit a i{
+    margin-left: 5px;
+    color: black;
+}
+
+.info-co{
+    display: flex;
+    align-items: center;
+}
+
+.info-color div:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+
+.aipinegreen{
+    background: rgb(1, 49, 49);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+.graphine{
+    background: rgb(101, 18, 1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+.gold{
+    background: rgb(232, 228, 28);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+.silver{
+    background: rgb(211, 241, 241);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+.sierrablue{
+    background: rgb(1, 44, 101);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+/* Capacity */
+.info-capacity{
+    margin: 40px 0 36px 624px;
+    padding-left: 40px;
+    width: 500px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.info-capacity .edit a{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.info-capacity .edit a i{
+    margin-left: 5px;
+    color: black;
+} 
+
+.info-capacity .cap, .info-capacity .edit{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.cap-1, .cap-2, .cap-3, .cap-4{
+    border: 1px solid;
+    margin: 20px 50px 30px 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.cap-1 div:last-child, .cap-2 div:last-child, .cap-3 div:last-child, .cap-4 div:last-child{
+    padding-left: 220px;
+}
+
+.cap-1:hover, .cap-2:hover, .cap-3:hover, .cap-4:hover{
+    box-shadow: 3px 3px 10px aqua;
+}
+
+.cap-1{
+    border-color: rgb(8, 85, 251);
+}
+
+/* end capacity */
+
+/* pricing options */
+
+.info-pri-op{
+    margin: 40px 0 36px 624px;
+    padding-left: 40px;
+    width: 500px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.info-pri-op .edit a{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.info-pri-op .edit a i{
+    margin-left: 5px;
+    color: black;
+} 
+
+.info-pri-op-p, .info-capacity .edit{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.op-1, .op-2{
+    border: 1px solid;
+    margin: 20px 50px 30px 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+/* end pricing option */
+
+/* upgrapde */
+
+.info-up{
+    margin: 40px 0 36px 624px;
+    padding-left: 40px;
+    width: 500px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.info-up .edit a{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.info-up .edit a i{
+    margin-left: 5px;
+    color: black;
+} 
+
+.info-up-p, .info-up .edit{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.up-p{
+    font-size: 15px;
+    padding-right: 55px;
+}
+
+.up-1, .up-2{
+    border: 1px solid;
+    margin: 20px 50px 30px 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+/* end upgrapde */
+
+/* trade */
+
+.info-trade{
+    margin: 40px 0 36px 624px;
+    padding-left: 40px;
+    width: 500px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.info-trade .edit a{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.info-trade .edit a i{
+    margin-left: 5px;
+    color: black;
+} 
+
+.info-trade-p, .info-trade .edit{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 13px;
+}
+
+.trade-p{
+    font-size: 15px;
+    padding-right: 55px;
+}
+
+.trade-1, .trade-2{
+    border: 1px solid;
+    margin: 20px 50px 30px 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+/* end trade */
+
+/* deli */
+
+.info-deli{
+    margin: 40px 0 36px 624px;
+    padding-left: 40px;
+    width: 500px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.deli-1 p:not(:last-child){
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.deli-1{
+    padding: 20px 0;
+}
+
+/* end deli */
+
+/* Overall */
+
+.overall{
+    margin: 0px 200px;
+    background: white;
+    padding: 30px 135px;
+}
+
+.overall div{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px;
+}
+
+.overall > div{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.overall button{
+    border: none;
+    width: auto;
+    background: white;
+    font-size: 18px;
+    
+}
+
+.pay-price{
+    margin: 20px 200px;
+    padding: 20px 0;
+    background: white;
+    height: 60px;
+    border-top: 2px solid blue;
+}
+
+.pay-price button{
+    float: right;
+    margin: 0 135px;
+    background: blue;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+/* may like */
+.may-like{
+    margin: 0 150px;
+}
+
+.may-like-text{
+    font-size: 34px;
+    color: #454B52;
+}
+
+.pro-may-like{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* ------------------------Personal------------------------------ */
+.main-advert{
+    background: #0057B8;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.text-1{
+    font-size: 18px;
+}
+
+.text-2{
+    font-size: 34px;
+}
+
+.text-3{
+    font-size: 18px;
+}
+
+.text-4{
+    font-size: 12px;
+}
+
+.text-5{
+    font-size: 15px;
+}
+
+.text-6{
+    font-size: 11px;
+}
+
+.shop-now{
+    padding: 10px 50px;
+    background: #0057B8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+.shop-now i{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.text-4 a{
+    color: inherit;
+}
+
+.main-1{
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    position: relative;
+    margin: 0 100px;
+    grid-gap: 30px;
+}
+
+.main-1-left{
+    background:url('https://www.att.com/idpassets/sales/uf/homepage/DadsGrads/1062662_mosaic2X-dsk-S22Ultra-DadsAndGrads-retina.jpg');
+    background-size: auto 476px;
+    background-repeat: no-repeat;
+}
+
+.main-1-left-text{
+    padding: 30px 360px 0 30px;
+}
+
+.main-1-left-text p{
+    margin-bottom: 16px;
+}
+
+.main-1-right{
+    background-image: url('https://www.att.com/idpassets/sales/uf/homepage/DadsGrads/1022662-mosaic1X-dsk-iPhone13ProMax-AlpineGreen-DadsAndGrads-retina.jpg');
+    background-size: auto 476px;
+}
+
+.main-1-right-text{
+    padding: 30px 0 0 30px;
+}
+
+.main-1-right-text p{
+    margin-bottom: 16px;
+}
+
+/* main-2 */
+
+.main-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px 100px 0 100px;
+    grid-gap: 30px;
+}
+
+.main-2-left, .main-2-mid, .main-2-right{
+    background-image: url('https://www.att.com/idpassets/sales/uf/homepage/DadsGrads/1062662-ValueCards-dsk-DadsAndGrads-retina.jpg');
+    height: 430px;
+    background-size: auto 332px;
+}
+
+.main-2-left-text, .main-2-mid-text, .main-2-right-text{
+    padding: 30px 42px 0 30px;
+}
+
+.main-2 p{
+    margin-bottom: 16px;
+}
+
+.main-2 a{
+    text-decoration: none;
+}
+
+/*  */
+
+.main-3{
+    background-image: url('https://www.att.com/idpassets/sales/uf/2021/hero/786851-hero-dsk-ACP_HubPage-retina.jpg');
+    height: 500px;
+    background-size: 100% 500px;;
+    background-repeat: no-repeat;
+}
+
+.main-3 p{
+    margin-bottom: 16px;
+}
+
+.main-3-text-1{
+    font-size: 22px;
+}
+
+.main-3-text-2{
+    font-size: 48px;
+}
+
+.main-3-text-3{
+    font-size: 18px;
+}
+
+.main-3-text-4{
+    font-size: 11px;
+}
+
+.main-3-text-4 a{
+    color: inherit;
+}
+
+.main-3-text{
+    padding: 30px 743px 0 138px;
+}
+
+/* main 4 */
+
+.main-4{
+    padding: 16px;
+    margin: 14px 0 8px 0;
+    text-align: center;
+}
+
+/* main 5 */
+
+.main-5{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 100px;
+    grid-gap: 20px;
+}
+
+.main-5-left{
+    background-image: url('https://www.att.com/idpassets/sales/uf/2022/rivercard/q1/824801-EDSP-HP-rivercard-dsk-retina.jpg');
+    height: 600px;
+    background-size: 558px 588px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-5-right{
+    background-image: url('https://www.att.com/idpassets/sales/landingpages/592097_refresh-atttv/592097-2up-dsk-dtvstream-retina.jpg');
+    height: 600px;
+    background-size: 558px 588px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-5-text-1{
+    font-size: 22px;
+}
+
+.main-5-text-2{
+    font-size: 34px;
+}
+
+.main-5-text-3{
+    font-size: 18px;
+}
+
+.main-5-text-4{
+    font-size: 11px;
+}
+
+.main-5-text-5{
+    font-size: 22px;
+    color: white;
+}
+
+.main-5-text-6{
+    font-size: 34px;
+    color: white;
+}
+
+.main-5-text-7{
+    font-size: 18px;
+    color: white;
+}
+
+.main-5-btn-left{
+    padding: 10px 50px;
+    border-radius: 5px;
+    background: none;
+    font-size: 14px;
+}
+
+.main-5-btn-right{
+    padding: 10px 50px;
+    border-radius: 5px;
+    background: none;
+    font-size: 14px;
+    color: white;
+    border-color: white;
+}
+
+.main-5-left-text, .main-5-right-text{
+    width: 588px;
+    text-align: center;
+    padding: 32px 32px;
+}
+
+.main-5-left-text p, .main-5-right-text p{
+    margin-bottom: 16px;
+}
+
+/* main 6 */
+
+.main-6{
+    background-image: url('https://www.att.com/idpassets/sales/uf/homepage/community/1105111-hero-tbl-Pride_month-retina.jpg');
+    height: 420px;
+    background-size: 100% 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.main-6-text{
+    padding: 130px 645px 0 135px;
+}
+
+.main-6-text p{
+    margin-bottom: 16px;
+}
+
+.main-6-text-1{
+    font-size: 18px;
+    color: white;
+}
+
+.main-6-text-2{
+    font-size: 48px;
+    color: white;
+}
+
+.main-6-btn{
+    padding: 20px 70px;
+    background: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* main 7 */
+
+.main-7{
+    text-align: center;
+    padding: 16px;
+}
+
+.main-7-text-1{
+    font-size: 22px;
+}
+
+.main-7-text-2{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* main 8 */
+
+.main-8{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 16px 100px;
+    grid-gap: 16px;
+}
+
+.main-8-left-text, .main-8-mid-text, .main-8-right-text{
+    text-align: center;
+}
+
+.main-8 i:not(:last-child){
+    font-size: 48px;
+}
+
+.main-8 p{
+    padding-bottom: 16px;
+}
+
+.main-8-text-1{
+    font-size: 24px;
+}
+
+.main-8-text-2{
+    font-size: 15px;
+}
+
+.main-8-text-3{
+    font-size: 12px;
+}
+
+/* main 9 */
+
+.main-9{
+    margin: 0 100px;
+}
+
+.main-9-top{
+    margin-bottom: 48px;
+}
+
+.main-9-top p{
+    margin: 0 0 16px;
+}
+
+.main-9-bot{
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid-gap: 16px;
+    height: 700px;
+    position: relative;
+}
+
+.main-9-bot-left, .main-9-bot-mid, .main-9-bot-right{
+    background: white;
+    margin: 64px 16px;
+}
+
+.main-9-bot img{
+    width: 398px;
+    height: auto;
+    margin: 0 0 16px;
+}
+
+.main-9-bot p, .main-9-bot button{
+    margin: 0 16px 16px;
+}
+
+.main-9-text-1{
+    font-size: 24px;
+}
+
+.main-9-text-2{
+    font-size: 15px;   
+}
+
+.main-9-bot button{
+    margin-top: 30px;
+}
+
+/* main 10 */
+
+.main-10{   
+    padding: 0 270px;
+    background: white;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.main-10-top{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 64px 0 32px;
+}
+
+.main-10-mid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
+}
+
+.main-10-mid p{
+    font-size: 15px;
+    padding: 8px 0 64px;
+}
+
+.main-10-mid i{
+    font-size: 30px;
+}
+
+.main-10-bot{
+    padding: 16px 0;
+}
+
+.main-10-bot-text{
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.main-10-btn{
+    border: none;
+    background: white;
+    margin: 16px 0;
+    padding: 16px 0;
+}
+
+.main-10-bot i{
+    margin: 16px 0;
+    padding: 16px 0;
+}
+
+/* main 11 */
+
+.main-11{
+    text-align: center;
+}
+
+.main-11 div{
+    margin: 16px 0;
+}
+
+.main-11 div:last-child{
+    margin: 50px 425px;
+}
+
+.main-11-text-1{
+    font-size: 48px;
+}
+
+.main-11-text-2{
+    font-size: 18px;
+}
+
+.main-11-email{
+    padding: 12px 35px 12px 20px;
+    font-style: italic;
+}
+
+.main-11-signup{
+    padding: 12px 48px;
+}
+
+.main-11-text-4{
+    font-size: 12px;
+}
+
+
+/* Responsive */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .deals, .wireless, .internet, .tv, .prepaid, .business, .nav-heart, .nav-cart, .detail-personal, .index-personal, .personal{
+        display: none;
+    }
+    
+    .bot{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .catelogies{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 100px;
+        grid-gap: 5px;
+    }
+
+    .connect-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+
+    /* Detail */
+
+    /* Personal */
+
+    .main-1{
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        margin: 0 10px;
+    }
+
+    .text-1{
+        font-size: 10px;
+    }
+    
+    .text-2{
+        font-size: 26px;
+    }
+    
+    .text-3{
+        font-size: 10px;
+    }
+    
+    .text-4{
+        font-size: 8px;
+    }
+    
+    .text-5{
+        font-size: 8px;
+    }
+    
+    .text-6{
+        font-size: 3px;
+    }
+
+    .shop-now{
+        padding: 5px 30px;
+        background: #0057B8;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .shop-now i{
+        font-size: 10px;
+    }
+
+    .main-1-left{
+        background-size: cover;
+    }
+
+    .main-1-left-text{
+        padding: 30px 30px 0 30px;
+    }
+
+    .main-1-right{
+        background-size: 100% 110%;
+        background-repeat: no-repeat;
+    }
+
+    .main-1-right-text{
+        padding: 10px 0 0 10px;
+    }
+
+    /* main 2 */
+    .main-2{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px 10px 0 10px;
+        grid-gap: 30px;
+    }
+
+    .main-2-left, .main-2-mid, .main-2-right{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/DadsGrads/1062662-ValueCards-dsk-DadsAndGrads-retina.jpg');
+        height: 225px;
+        background-size: auto 222px;
+    }
+
+    .main-2-left-text, .main-2-mid-text, .main-2-right-text{
+        padding: 20px 10px;
+    }
+
+    /* main 3 */
+    .main-3{
+        background-image: url('https://www.att.com/idpassets/sales/uf/2021/hero/786851-hero-dsk-ACP_HubPage-retina.jpg');
+        height: 266px;
+        background-size: 100% 160px;;
+        background-repeat: no-repeat;
+        margin-bottom: 173px;
+    }
+    
+    .main-3 p{
+        margin-bottom: 11px;
+    }
+    
+    .main-3-text-1{
+        font-size: 14px;
+    }
+    
+    .main-3-text-2{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .main-3-text-3{
+        font-size: 10px;
+    }
+    
+    .main-3-text-4{
+        font-size: 7px;
+    }
+
+    .main-3-text{
+        padding: 165px 20px 0 20px;
+    }
+    /* main 4 */
+
+    .main-4 {
+        padding: 16px;
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+    /* main 5 */
+    .main-5{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 20px;
+    }
+
+    .main-5-left{
+        background-image: url('https://www.att.com/idpassets/sales/uf/2022/rivercard/q1/824801-EDSP-HP-rivercard-dsk-retina.jpg');
+        height: 524px;
+        background-size: auto 506px;
+        background-repeat: no-repeat;
+    }
+
+    .main-5-right{
+        height: 524px;
+        background-size: auto 506px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main-5-text-1{
+        font-size: 14px;
+    }
+    
+    .main-5-text-2{
+        font-size: 13px;
+    }
+    
+    .main-5-text-3{
+        font-size: 9px;
+    }
+    
+    .main-5-text-4{
+        font-size: 9px;
+    }
+    
+    .main-5-text-5{
+        font-size: 13px;
+        color: white;
+    }
+    
+    .main-5-text-6{
+        font-size: 22px;
+        color: white;
+    }
+    
+    .main-5-text-7{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .main-5-btn-left{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 11px;
+    }
+    
+    .main-5-btn-right{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 14px;
+        color: white;
+        border-color: white;
+    }
+
+    .main-5-left-text, .main-5-right-text{
+        width: auto;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    /* main 6 */
+    .main-6{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/community/1105111-hero-tbl-Pride_month-retina.jpg');
+        height: 340px;
+        background-size: 100% 178px;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        margin-bottom: 295px;
+   }
+    
+    .main-6-text{
+        padding: 179px 20px 0 20px;
+    }
+    
+    .main-6-text p{
+        margin-bottom: 16px;
+        color: black;
+    }
+    
+    .main-6-text-1{
+        font-size: 18px;
+        color: white;
+    }
+    
+    .main-6-text-2{
+        font-size: 48px;
+        color: white;
+    }
+    
+    .main-6-btn{
+        padding: 20px 70px;
+        background: white;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-top: 10px;
+        border: 1px solid;
+    }
+
+    /* main 7 */
+
+    .main-7{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-7-text-1{
+        font-size: 15px;
+    }
+
+    .main-7-text-2{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    /* main 8 */
+
+    .main-8{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 16px 20px;
+    }
+
+    .main-8-left-text, .main-8-mid-text, .main-8-right-text{
+        text-align: center;
+    }
+
+    .main-8 i:not(:last-child){
+        font-size: 48px;
+    }
+
+    .main-8 p{
+        padding-bottom: 16px;
+    }
+
+    .main-8-text-1{
+        font-size: 24px;
+    }
+
+    .main-8-text-2{
+        font-size: 15px;
+    }
+
+    .main-8-text-3{
+        font-size: 12px;
+    }
+
+    /* main 9 */
+
+    .main-9{
+        margin: 0 20px;
+    }
+
+    .main-9-top{
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .main-9-top p{
+        margin: 0 0 16px;
+    }
+
+    .main-9-bot{
+        display: flex;
+        /* grid-template-columns: auto; */
+        flex-wrap: wrap;
+        height: 700px;
+    }
+
+    .main-9-bot-left, .main-9-bot-mid, .main-9-bot-right{
+        background: white;
+        margin: 64px 16px;
+    }
+
+    .main-9-bot img{
+        width: auto;
+        height: auto;
+        margin: 20px 16px;
+    }
+
+    .main-9-bot p, .main-9-bot button{
+        margin: 0 16px 16px;
+    }
+
+    .main-9-text-1{
+        font-size: 24px;
+    }
+
+    .main-9-text-2{
+        font-size: 15px;   
+    }
+
+    .main-9-bot button{
+        margin-top: 20px;
+    }
+
+    /* main 10 */
+
+    .main-10{   
+        background: white;
+        height: auto;
+        margin: 1010px 20px 20px 20px;
+        padding: 10px 10px;
+    }
+
+    .main-10-top{
+        text-align: center;
+        font-size: 10x;
+        font-weight: bold;
+        padding: 30px 0 20px;
+    }
+
+    .main-10-mid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        text-align: center;
+    }
+
+    .main-10-mid p{
+        font-size: 12px;
+        padding: 10px 0 40px;
+    }
+
+    .main-10-mid i{
+        font-size: 30px;
+    }
+
+    .main-10-bot{
+        padding: 16px 0;
+    }
+
+    .main-10-bot-text{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+
+    .main-10-btn{
+        border: none;
+        background: white;
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    .main-10-bot i{
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    /* main 11 */
+
+    .main-11{
+        text-align: center;
+    }
+
+    .main-11 div{
+        margin: 16px 0;
+    }
+
+    .main-11 div:last-child{
+        margin: 20px 60px;
+    }
+
+    .main-11-text-1{
+        font-size: 30px;
+    }
+
+    .main-11-text-2{
+        font-size: 11px;
+    }
+
+    .main-11-email{
+        padding: 12px 35px 12px 20px;
+        font-style: italic;
+    }
+
+    .main-11-signup{
+        padding: 12px 40px;
+    }
+
+    .main-11-text-4{
+        font-size: 9px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    .deals, .wireless, .internet, .tv, .prepaid, .business, .nav-heart, .nav-cart, .detail-personal, .index-personal, .personal{
+        display: none;
+    }
+    
+    .bot{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .catelogies{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 100px;
+        grid-gap: 5px;
+    }
+
+    .connect-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+
+    /* Detail */
+
+    /* Personal */
+
+    .main-1{
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        margin: 0 30px;
+    }
+
+    .text-1{
+        font-size: 14px;
+    }
+    
+    .text-2{
+        font-size: 26px;
+    }
+    
+    .text-3{
+        font-size: 12px;
+    }
+    
+    .text-4{
+        font-size: 12px;
+    }
+    
+    .text-5{
+        font-size: 11px;
+    }
+    
+    .text-6{
+        font-size: 8px;
+    }
+
+    .shop-now{
+        padding: 5px 30px;
+        background: #0057B8;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .shop-now i{
+        font-size: 10px;
+    }
+
+    .main-1-left{
+        background-size: 100% 153%;
+        background-repeat: no-repeat;    
+    }
+
+    .main-1-left-text{
+        padding: 30px 238px 0 30px;
+    }
+
+    .main-1-right{
+        background-size: 100% 115%;
+        background-repeat: no-repeat;
+    }
+
+    .main-1-right-text{
+        padding: 10px 0 0 10px;
+    }
+
+    /* main 2 */
+    .main-2{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px 10px 0 10px;
+        grid-gap: 30px;
+    }
+
+    .main-2-left, .main-2-mid, .main-2-right{
+        height: 225px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .main-2-left-text, .main-2-mid-text, .main-2-right-text{
+        padding: 20px 10px;
+    }
+
+    /* main 3 */
+    .main-3{
+        height: 266px;
+        background-size: 100% 160px;;
+        background-repeat: no-repeat;
+        margin-bottom: 173px;
+        margin-top: 20px;
+    }
+    
+    .main-3 p{
+        margin-bottom: 11px;
+    }
+    
+    .main-3-text-1{
+        font-size: 16px;
+    }
+    
+    .main-3-text-2{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .main-3-text-3{
+        font-size: 12px;
+    }
+    
+    .main-3-text-4{
+        font-size: 10px;
+    }
+
+    .main-3-text{
+        padding: 165px 20px 0 20px;
+    }
+    /* main 4 */
+
+    .main-4 {
+        padding: 16px;
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+    /* main 5 */
+    .main-5{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 30px;
+    }
+
+    .main-5-left{
+        height: 524px;
+        background-size: auto 506px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-5-right{
+        height: 524px;
+        background-size: auto 506px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main-5-text-1{
+        font-size: 16px;
+    }
+    
+    .main-5-text-2{
+        font-size: 15px;
+    }
+    
+    .main-5-text-3{
+        font-size: 12px;
+    }
+    
+    .main-5-text-4{
+        font-size: 12px;
+    }
+    
+    .main-5-text-5{
+        font-size: 13px;
+        color: white;
+    }
+    
+    .main-5-text-6{
+        font-size: 22px;
+        color: white;
+    }
+    
+    .main-5-text-7{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .main-5-btn-left{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 11px;
+    }
+    
+    .main-5-btn-right{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 14px;
+        color: white;
+        border-color: white;
+    }
+
+    .main-5-left-text, .main-5-right-text{
+        width: auto;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    /* main 6 */
+    .main-6{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/community/1105111-hero-tbl-Pride_month-retina.jpg');
+        height: 340px;
+        background-size: 100% 178px;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        margin-bottom: 295px;
+   }
+    
+    .main-6-text{
+        padding: 179px 20px 0 20px;
+    }
+    
+    .main-6-text p{
+        margin-bottom: 18px;
+        color: black;
+    }
+    
+    .main-6-text-1{
+        font-size: 20px;
+        color: white;
+    }
+    
+    .main-6-text-2{
+        font-size: 48px;
+        color: white;
+    }
+    
+    .main-6-btn{
+        padding: 20px 70px;
+        background: white;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-top: 10px;
+        border: 1px solid;
+    }
+
+    /* main 7 */
+
+    .main-7{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-7-text-1{
+        font-size: 18px;
+    }
+
+    .main-7-text-2{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    /* main 8 */
+
+    .main-8{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 16px 30px;
+    }
+
+    .main-8-left-text, .main-8-mid-text, .main-8-right-text{
+        text-align: center;
+    }
+
+    .main-8 i:not(:last-child){
+        font-size: 48px;
+    }
+
+    .main-8 p{
+        padding-bottom: 18px;
+    }
+
+    .main-8-text-1{
+        font-size: 28px;
+    }
+
+    .main-8-text-2{
+        font-size: 17px;
+    }
+
+    .main-8-text-3{
+        font-size: 15px;
+    }
+
+    /* main 9 */
+
+    .main-9{
+        margin: 0 20px;
+    }
+
+    .main-9-top{
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .main-9-top p{
+        margin: 0 0 16px;
+    }
+
+    .main-9-bot{
+        display: flex;
+        /* grid-template-columns: auto; */
+        flex-wrap: wrap;
+        height: 700px;
+    }
+
+    .main-9-bot-left, .main-9-bot-mid, .main-9-bot-right{
+        background: white;
+        margin: 64px 16px;
+    }
+
+    .main-9-bot img{
+        width: auto;
+        height: auto;
+        margin: 20px 16px;
+    }
+
+    .main-9-bot p, .main-9-bot button{
+        margin: 0 16px 16px;
+    }
+
+    .main-9-text-1{
+        font-size: 28px;
+    }
+
+    .main-9-text-2{
+        font-size: 18px;   
+    }
+
+    .main-9-bot button{
+        margin-top: 20px;
+    }
+
+    /* main 10 */
+
+    .main-10{   
+        background: white;
+        height: auto;
+        margin: 1605px 20px 20px 20px;
+        padding: 10px 10px;
+    }
+
+    .main-10-top{
+        text-align: center;
+        font-size: 10x;
+        font-weight: bold;
+        padding: 30px 0 20px;
+    }
+
+    .main-10-mid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        text-align: center;
+    }
+
+    .main-10-mid p{
+        font-size: 12px;
+        padding: 10px 0 40px;
+    }
+
+    .main-10-mid i{
+        font-size: 30px;
+    }
+
+    .main-10-bot{
+        padding: 16px 0;
+    }
+
+    .main-10-bot-text{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+
+    .main-10-btn{
+        border: none;
+        background: white;
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    .main-10-bot i{
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    /* main 11 */
+
+    .main-11{
+        text-align: center;
+    }
+
+    .main-11 div{
+        margin: 16px 0;
+    }
+
+    .main-11 div:last-child{
+        margin: 20px 60px;
+    }
+
+    .main-11-text-1{
+        font-size: 30px;
+    }
+
+    .main-11-text-2{
+        font-size: 11px;
+    }
+
+    .main-11-email{
+        padding: 12px 35px 12px 20px;
+        font-style: italic;
+    }
+
+    .main-11-signup{
+        padding: 12px 40px;
+    }
+
+    .main-11-text-4{
+        font-size: 9px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    .deals, .wireless, .internet, .tv, .prepaid, .business, .nav-heart, .nav-cart, .detail-personal, .index-personal, .personal{
+        display: inherit;
+    }
+    
+    .bot{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .catelogies{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 100px;
+        grid-gap: 5px;
+    }
+
+    .connect-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+
+    /* Detail */
+
+    /* Personal */
+
+    .main-1{
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        margin: 0 30px;
+    }
+
+    .text-1{
+        font-size: 20px;
+    }
+    
+    .text-2{
+        font-size: 34px;
+    }
+    
+    .text-3{
+        font-size: 19px;
+    }
+    
+    .text-4{
+        font-size: 15px;
+    }
+    
+    .text-5{
+        font-size: 15px;
+    }
+    
+    .text-6{
+        font-size: 13px;
+    }
+
+    .shop-now{
+        padding: 5px 30px;
+        background: #0057B8;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .shop-now i{
+        font-size: 10px;
+    }
+
+    .main-1-left{
+        background-size: 100% 153%;
+        background-repeat: no-repeat;    
+    }
+
+    .main-1-left-text{
+        padding: 30px 280px 0 30px;
+    }
+
+    .main-1-right{
+        background-size: 100% 115%;
+        background-repeat: no-repeat;
+    }
+
+    .main-1-right-text{
+        padding: 10px 0 0 10px;
+    }
+
+    /* main 2 */
+    .main-2{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px 10px 0 10px;
+        grid-gap: 30px;
+    }
+
+    .main-2-left, .main-2-mid, .main-2-right{
+        height: 225px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .main-2-left-text, .main-2-mid-text, .main-2-right-text{
+        padding: 20px 10px;
+    }
+
+    /* main 3 */
+    .main-3{
+        height: 266px;
+        background-size: 100% 160px;;
+        background-repeat: no-repeat;
+        margin-bottom: 173px;
+        margin-top: 20px;
+    }
+    
+    .main-3 p{
+        margin-bottom: 11px;
+    }
+    
+    .main-3-text-1{
+        font-size: 16px;
+    }
+    
+    .main-3-text-2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .main-3-text-3{
+        font-size: 12px;
+    }
+    
+    .main-3-text-4{
+        font-size: 10px;
+    }
+
+    .main-3-text{
+        padding: 165px 20px 0 20px;
+    }
+    /* main 4 */
+
+    .main-4 {
+        padding: 16px;
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+    /* main 5 */
+    .main-5{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 30px;
+    }
+
+    .main-5-left{
+        height: 524px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .main-5-right{
+        height: 524px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    
+    .main-5-text-1{
+        font-size: 18px;
+    }
+    
+    .main-5-text-2{
+        font-size: 18px;
+    }
+    
+    .main-5-text-3{
+        font-size: 15px;
+    }
+    
+    .main-5-text-4{
+        font-size: 15px;
+    }
+    
+    .main-5-text-5{
+        font-size: 15px;
+        color: white;
+    }
+    
+    .main-5-text-6{
+        font-size: 28px;
+        color: white;
+    }
+    
+    .main-5-text-7{
+        font-size: 15px;
+        color: white;
+    }
+    
+    .main-5-btn-left{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 11px;
+    }
+    
+    .main-5-btn-right{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 14px;
+        color: white;
+        border-color: white;
+    }
+
+    .main-5-left-text, .main-5-right-text{
+        width: auto;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    /* main 6 */
+    .main-6{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/community/1105111-hero-tbl-Pride_month-retina.jpg');
+        height: 340px;
+        background-size: 100% 178px;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        margin-bottom: 295px;
+   }
+    
+    .main-6-text{
+        padding: 179px 20px 0 20px;
+    }
+    
+    .main-6-text p{
+        margin-bottom: 18px;
+        color: black;
+    }
+    
+    .main-6-text-1{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .main-6-text-2{
+        font-size: 52px;
+        color: white;
+    }
+    
+    .main-6-btn{
+        padding: 20px 70px;
+        background: white;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-top: 10px;
+        border: 1px solid;
+    }
+
+    /* main 7 */
+
+    .main-7{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-7-text-1{
+        font-size: 24px;
+    }
+
+    .main-7-text-2{
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    /* main 8 */
+
+    .main-8{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 16px 30px;
+    }
+
+    .main-8-left-text, .main-8-mid-text, .main-8-right-text{
+        text-align: center;
+    }
+
+    .main-8 i:not(:last-child){
+        font-size: 50px;
+    }
+
+    .main-8 p{
+        padding-bottom: 18px;
+    }
+
+    .main-8-text-1{
+        font-size: 30px;
+    }
+
+    .main-8-text-2{
+        font-size: 20px;
+    }
+
+    .main-8-text-3{
+        font-size: 18px;
+    }
+
+    /* main 9 */
+
+    .main-9{
+        margin: 0 20px;
+    }
+
+    .main-9-top{
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .main-9-top p{
+        margin: 0 0 16px;
+    }
+
+    .main-9-bot{
+        display: flex;
+        /* grid-template-columns: auto; */
+        flex-wrap: wrap;
+        height: 700px;
+    }
+
+    .main-9-bot-left, .main-9-bot-mid, .main-9-bot-right{
+        background: white;
+        margin: 64px 16px;
+    }
+
+    .main-9-bot img{
+        width: auto;
+        height: auto;
+        margin: 20px 16px;
+    }
+
+    .main-9-bot p, .main-9-bot button{
+        margin: 0 16px 16px;
+    }
+
+    .main-9-text-1{
+        font-size: 28px;
+    }
+
+    .main-9-text-2{
+        font-size: 18px;   
+    }
+
+    .main-9-bot button{
+        margin-top: 20px;
+    }
+
+    /* main 10 */
+
+    .main-10{   
+        background: white;
+        height: auto;
+        margin: 1605px 20px 20px 20px;
+        padding: 10px 10px;
+    }
+
+    .main-10-top{
+        text-align: center;
+        font-size: 10x;
+        font-weight: bold;
+        padding: 30px 0 20px;
+    }
+
+    .main-10-mid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        text-align: center;
+    }
+
+    .main-10-mid p{
+        font-size: 12px;
+        padding: 10px 0 40px;
+    }
+
+    .main-10-mid i{
+        font-size: 30px;
+    }
+
+    .main-10-bot{
+        padding: 16px 0;
+    }
+
+    .main-10-bot-text{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+
+    .main-10-btn{
+        border: none;
+        background: white;
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    .main-10-bot i{
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    /* main 11 */
+
+    .main-11{
+        text-align: center;
+    }
+
+    .main-11 div{
+        margin: 16px 0;
+    }
+
+    .main-11 div:last-child{
+        margin: 20px 60px;
+    }
+
+    .main-11-text-1{
+        font-size: 30px;
+    }
+
+    .main-11-text-2{
+        font-size: 11px;
+    }
+
+    .main-11-email{
+        padding: 12px 35px 12px 20px;
+        font-style: italic;
+    }
+
+    .main-11-signup{
+        padding: 12px 40px;
+    }
+
+    .main-11-text-4{
+        font-size: 9px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .deals, .wireless, .internet, .tv, .prepaid, .business, .nav-heart, .nav-cart, .detail-personal, .index-personal, .personal{
+        display: inherit;
+    }
+    
+    .bot{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+    
+    .catelogies{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 0 100px;
+        grid-gap: 5px;
+    }
+
+    .connect-list{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+
+    /* Detail */
+
+    /* Personal */
+
+    .main-1{
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        position: relative;
+        margin: 0 30px;
+    }
+
+    .text-1{
+        font-size: 20px;
+    }
+    
+    .text-2{
+        font-size: 34px;
+    }
+    
+    .text-3{
+        font-size: 19px;
+    }
+    
+    .text-4{
+        font-size: 15px;
+    }
+    
+    .text-5{
+        font-size: 15px;
+    }
+    
+    .text-6{
+        font-size: 13px;
+    }
+
+    .shop-now{
+        padding: 5px 30px;
+        background: #0057B8;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .shop-now i{
+        font-size: 10px;
+    }
+
+    .main-1-left{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;    
+    }
+
+    .main-1-left-text{
+        padding: 29px 235px 80px 30px;
+    }
+
+    .main-1-right{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .main-1-right-text{
+        padding: 10px 0 0 10px;
+    }
+
+    /* main 2 */
+    .main-2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 30px;
+        grid-gap: 10px;
+    }
+
+    .main-2-left, .main-2-mid, .main-2-right{
+        height: 400px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .main-2-left-text, .main-2-mid-text, .main-2-right-text{
+        padding: 20px 10px;
+    }
+
+    /* main 3 */
+    .main-3{
+        height: 266px;
+        background-size: 100% 160px;;
+        background-repeat: no-repeat;
+        margin-bottom: 173px;
+        margin-top: 20px;
+    }
+    
+    .main-3 p{
+        margin-bottom: 11px;
+    }
+    
+    .main-3-text-1{
+        font-size: 25px;
+    }
+    
+    .main-3-text-2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .main-3-text-3{
+        font-size: 18px;
+    }
+    
+    .main-3-text-4{
+        font-size: 15px;
+    }
+
+    .main-3-text{
+        padding: 165px 20px 0 20px;
+    }
+    /* main 4 */
+
+    .main-4 {
+        padding: 16px;
+        margin: 20px 0 20px 0;
+        text-align: center;
+    }
+    /* main 5 */
+    .main-5{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 30px;
+    }
+
+    .main-5-left{
+        height: 524px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .main-5-right{
+        height: 524px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    
+    .main-5-text-1{
+        font-size: 30px;
+    }
+    
+    .main-5-text-2{
+        font-size: 25px;
+    }
+    
+    .main-5-text-3{
+        font-size: 20px;
+    }
+    
+    .main-5-text-4{
+        font-size: 20px;
+    }
+    
+    .main-5-text-5{
+        font-size: 20px;
+        color: white;
+    }
+    
+    .main-5-text-6{
+        font-size: 28px;
+        color: white;
+    }
+    
+    .main-5-text-7{
+        font-size: 20px;
+        color: white;
+    }
+    
+    .main-5-btn-left{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 15px;
+    }
+    
+    .main-5-btn-right{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 15px;
+        color: white;
+        border-color: white;
+    }
+
+    .main-5-left-text, .main-5-right-text{
+        width: auto;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    /* main 6 */
+    .main-6{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/community/1105111-hero-tbl-Pride_month-retina.jpg');
+        height: 340px;
+        background-size: 100% 178px;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        margin-bottom: 295px;
+   }
+    
+    .main-6-text{
+        padding: 179px 20px 0 20px;
+    }
+    
+    .main-6-text p{
+        margin-bottom: 18px;
+        color: black;
+    }
+    
+    .main-6-text-1{
+        font-size: 25px;
+        color: white;
+    }
+    
+    .main-6-text-2{
+        font-size: 52px;
+        color: white;
+    }
+    
+    .main-6-btn{
+        padding: 20px 70px;
+        background: white;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-top: 10px;
+        border: 1px solid;
+    }
+
+    /* main 7 */
+
+    .main-7{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-7-text-1{
+        font-size: 24px;
+    }
+
+    .main-7-text-2{
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    /* main 8 */
+
+    .main-8{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 16px 30px;
+    }
+
+    .main-8-left-text, .main-8-mid-text, .main-8-right-text{
+        text-align: center;
+    }
+
+    .main-8 i:not(:last-child){
+        font-size: 50px;
+    }
+
+    .main-8 p{
+        padding-bottom: 18px;
+    }
+
+    .main-8-text-1{
+        font-size: 30px;
+    }
+
+    .main-8-text-2{
+        font-size: 20px;
+    }
+
+    .main-8-text-3{
+        font-size: 18px;
+    }
+
+    /* main 9 */
+
+    .main-9{
+        margin: 0 20px;
+    }
+
+    .main-9-top{
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .main-9-top p{
+        margin: 0 0 16px;
+    }
+
+    .main-9-bot{
+        display: flex;
+        /* grid-template-columns: auto; */
+        flex-wrap: wrap;
+        height: 700px;
+    }
+
+    .main-9-bot-left, .main-9-bot-mid, .main-9-bot-right{
+        background: white;
+        margin: 64px 16px;
+    }
+
+    .main-9-bot img{
+        width: auto;
+        height: auto;
+        margin: 20px 16px;
+    }
+
+    .main-9-bot p, .main-9-bot button{
+        margin: 0 16px 16px;
+    }
+
+    .main-9-text-1{
+        font-size: 34px;
+    }
+
+    .main-9-text-2{
+        font-size: 20px;   
+    }
+
+    .main-9-bot button{
+        margin-top: 20px;
+    }
+
+    /* main 10 */
+
+    .main-10{   
+        background: white;
+        height: auto;
+        margin: 1605px 20px 20px 20px;
+        padding: 10px 10px;
+    }
+
+    .main-10-top{
+        text-align: center;
+        font-size: 10x;
+        font-weight: bold;
+        padding: 30px 0 20px;
+    }
+
+    .main-10-mid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        text-align: center;
+    }
+
+    .main-10-mid p{
+        font-size: 12px;
+        padding: 10px 0 40px;
+    }
+
+    .main-10-mid i{
+        font-size: 30px;
+    }
+
+    .main-10-bot{
+        padding: 16px 0;
+    }
+
+    .main-10-bot-text{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+
+    .main-10-btn{
+        border: none;
+        background: white;
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    .main-10-bot i{
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+
+    /* main 11 */
+
+    .main-11{
+        text-align: center;
+    }
+
+    .main-11 div{
+        margin: 16px 0;
+    }
+
+    .main-11 div:last-child{
+        margin: 20px 60px;
+    }
+
+    .main-11-text-1{
+        font-size: 30px;
+    }
+
+    .main-11-text-2{
+        font-size: 11px;
+    }
+
+    .main-11-email{
+        padding: 12px 35px 12px 20px;
+        font-style: italic;
+    }
+
+    .main-11-signup{
+        padding: 12px 40px;
+    }
+
+    .main-11-text-4{
+        font-size: 9px;
+    }
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    .deals, .wireless, .internet, .tv, .prepaid, .business, .nav-heart, .nav-cart, .detail-personal, .index-personal, .personal{
+        display: inherit;
+    }
+
+    .bot{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+    
+    .catelogies{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 0 100px;
+        grid-gap: 5px;
+    }
+
+    .connect-list{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 5px;
+        margin-top: 10px;
+    }
+    
+    .text-1{
+        font-size: 18px;
+    }
+    
+    .text-2{
+        font-size: 34px;
+    }
+    
+    .text-3{
+        font-size: 18px;
+    }
+    
+    .text-4{
+        font-size: 12px;
+    }
+    
+    .text-5{
+        font-size: 15px;
+    }
+    
+    .text-6{
+        font-size: 11px;
+    }
+    
+    .shop-now{
+        padding: 10px 50px;
+        background: #0057B8;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+    }
+    
+    .shop-now i{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    
+    .text-4 a{
+        color: inherit;
+    }
+    
+    .main-1{
+        display: grid;
+        grid-template-columns: 6fr 3fr;
+        position: relative;
+        margin: 0 100px;
+        grid-gap: 30px;
+    }
+    
+    .main-1-left{
+        background:url('https://www.att.com/idpassets/sales/uf/homepage/DadsGrads/1062662_mosaic2X-dsk-S22Ultra-DadsAndGrads-retina.jpg');
+        background-size: auto 476px;
+        background-repeat: no-repeat;
+    }
+    
+    .main-1-left-text{
+        padding: 30px 360px 0 30px;
+    }
+    
+    .main-1-left-text p{
+        margin-bottom: 16px;
+    }
+    
+    .main-1-right{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/DadsGrads/1022662-mosaic1X-dsk-iPhone13ProMax-AlpineGreen-DadsAndGrads-retina.jpg');
+        background-size: auto 476px;
+    }
+    
+    .main-1-right-text{
+        padding: 30px 0 0 30px;
+    }
+    
+    .main-1-right-text p{
+        margin-bottom: 16px;
+    }
+    
+    /* main-2 */
+    
+    .main-2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 50px 100px 0 100px;
+        grid-gap: 30px;
+    }
+    
+    .main-2-left, .main-2-mid, .main-2-right{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/DadsGrads/1062662-ValueCards-dsk-DadsAndGrads-retina.jpg');
+        height: 430px;
+        background-size: auto 332px;
+    }
+    
+    .main-2-left-text, .main-2-mid-text, .main-2-right-text{
+        padding: 30px 42px 0 30px;
+    }
+    
+    .main-2 p{
+        margin-bottom: 16px;
+    }
+    
+    .main-2 a{
+        text-decoration: none;
+    }
+    
+    /*  */
+    
+    .main-3{
+        background-image: url('https://www.att.com/idpassets/sales/uf/2021/hero/786851-hero-dsk-ACP_HubPage-retina.jpg');
+        height: 500px;
+        background-size: 100% 500px;;
+        background-repeat: no-repeat;
+    }
+    
+    .main-3 p{
+        margin-bottom: 16px;
+    }
+    
+    .main-3-text-1{
+        font-size: 22px;
+    }
+    
+    .main-3-text-2{
+        font-size: 48px;
+    }
+    
+    .main-3-text-3{
+        font-size: 18px;
+    }
+    
+    .main-3-text-4{
+        font-size: 11px;
+    }
+    
+    .main-3-text-4 a{
+        color: inherit;
+    }
+    
+    .main-3-text{
+        padding: 30px 743px 0 138px;
+    }
+    
+    /* main 4 */
+    
+    .main-4{
+        padding: 16px;
+        margin: 14px 0 8px 0;
+        text-align: center;
+    }
+    
+    /* main 5 */
+    
+    .main-5{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 100px;
+        grid-gap: 20px;
+    }
+    
+    .main-5-left{
+        background-image: url('https://www.att.com/idpassets/sales/uf/2022/rivercard/q1/824801-EDSP-HP-rivercard-dsk-retina.jpg');
+        height: 600px;
+        background-size: 558px 588px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main-5-right{
+        background-image: url('https://www.att.com/idpassets/sales/landingpages/592097_refresh-atttv/592097-2up-dsk-dtvstream-retina.jpg');
+        height: 600px;
+        background-size: 558px 588px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main-5-text-1{
+        font-size: 22px;
+    }
+    
+    .main-5-text-2{
+        font-size: 34px;
+    }
+    
+    .main-5-text-3{
+        font-size: 18px;
+    }
+    
+    .main-5-text-4{
+        font-size: 11px;
+    }
+    
+    .main-5-text-5{
+        font-size: 22px;
+        color: white;
+    }
+    
+    .main-5-text-6{
+        font-size: 34px;
+        color: white;
+    }
+    
+    .main-5-text-7{
+        font-size: 18px;
+        color: white;
+    }
+    
+    .main-5-btn-left{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 14px;
+    }
+    
+    .main-5-btn-right{
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: none;
+        font-size: 14px;
+        color: white;
+        border-color: white;
+    }
+    
+    .main-5-left-text, .main-5-right-text{
+        width: 588px;
+        text-align: center;
+        padding: 32px 32px;
+    }
+    
+    .main-5-left-text p, .main-5-right-text p{
+        margin-bottom: 16px;
+    }
+    
+    /* main 6 */
+    
+    .main-6{
+        background-image: url('https://www.att.com/idpassets/sales/uf/homepage/community/1105111-hero-tbl-Pride_month-retina.jpg');
+        height: 420px;
+        background-size: 100% 420px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 20px;
+    }
+    
+    .main-6-text{
+        padding: 130px 645px 0 135px;
+    }
+    
+    .main-6-text p{
+        margin-bottom: 16px;
+    }
+    
+    .main-6-text-1{
+        font-size: 18px;
+        color: white;
+    }
+    
+    .main-6-text-2{
+        font-size: 48px;
+        color: white;
+    }
+    
+    .main-6-btn{
+        padding: 20px 70px;
+        background: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    /* main 7 */
+    
+    .main-7{
+        text-align: center;
+        padding: 16px;
+    }
+    
+    .main-7-text-1{
+        font-size: 22px;
+    }
+    
+    .main-7-text-2{
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    
+    /* main 8 */
+    
+    .main-8{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 16px 100px;
+        grid-gap: 16px;
+    }
+    
+    .main-8-left-text, .main-8-mid-text, .main-8-right-text{
+        text-align: center;
+    }
+    
+    .main-8 i:not(:last-child){
+        font-size: 48px;
+    }
+    
+    .main-8 p{
+        padding-bottom: 16px;
+    }
+    
+    .main-8-text-1{
+        font-size: 24px;
+    }
+    
+    .main-8-text-2{
+        font-size: 15px;
+    }
+    
+    .main-8-text-3{
+        font-size: 12px;
+    }
+    
+    /* main 9 */
+    
+    .main-9{
+        margin: 0 100px;
+    }
+    
+    .main-9-top{
+        margin-bottom: 48px;
+    }
+    
+    .main-9-top p{
+        margin: 0 0 16px;
+    }
+    
+    .main-9-bot{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 16px;
+        height: 500px;
+        position: relative;
+    }
+    
+    .main-9-bot-left, .main-9-bot-mid, .main-9-bot-right{
+        background: white;
+        margin: 64px 16px;
+    }
+    
+    .main-9-bot img{
+        width: 398px;
+        height: auto;
+        margin: 0 0 16px;
+    }
+    
+    .main-9-bot p, .main-9-bot button{
+        margin: 0 16px 16px;
+    }
+    
+    .main-9-text-1{
+        font-size: 24px;
+    }
+    
+    .main-9-text-2{
+        font-size: 15px;   
+    }
+    
+    .main-9-bot button{
+        margin-top: 30px;
+    }
+    
+    /* main 10 */
+    
+    .main-10{   
+        padding: 0 270px;
+        background: white;
+        height: auto;
+        margin: 90px 20px 20px
+    }
+    
+    .main-10-top{
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        padding: 64px 0 32px;
+    }
+    
+    .main-10-mid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        text-align: center;
+    }
+    
+    .main-10-mid p{
+        font-size: 15px;
+        padding: 8px 0 64px;
+    }
+    
+    .main-10-mid i{
+        font-size: 30px;
+    }
+    
+    .main-10-bot{
+        padding: 16px 0;
+    }
+    
+    .main-10-bot-text{
+        display: flex;
+        justify-content: space-between;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+    
+    .main-10-btn{
+        border: none;
+        background: white;
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+    
+    .main-10-bot i{
+        margin: 16px 0;
+        padding: 16px 0;
+    }
+    
+    /* main 11 */
+    
+    .main-11{
+        text-align: center;
+    }
+    
+    .main-11 div{
+        margin: 16px 0;
+    }
+    
+    .main-11 div:last-child{
+        margin: 50px 425px;
+    }
+    
+    .main-11-text-1{
+        font-size: 48px;
+    }
+    
+    .main-11-text-2{
+        font-size: 18px;
+    }
+    
+    .main-11-email{
+        padding: 12px 35px 12px 20px;
+        font-style: italic;
+    }
+    
+    .main-11-signup{
+        padding: 12px 48px;
+    }
+    
+    .main-11-text-4{
+        font-size: 12px;
+    }
+
+} 
